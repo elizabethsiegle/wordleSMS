@@ -21,7 +21,9 @@ let handleGuess = async (guess) => {
   try {
     await got(`https://api.dictionaryapi.dev/api/v2/entries/en/${guess}`).then((response) => {
       if (response.statusCode !== 404) {
+        console.log(`guess ${guess}`);
         guessesAttempted+=1;
+        console.log(`guessesAttempted ${guessesAttempted}`);
         let guessAsArray = guess.split('');
         let newScoreCard = [];
         for (let i = 0; i < guessAsArray.length; i++) {
