@@ -17,16 +17,14 @@ npm install twilio-cli -g
 twilio login
 twilio plugins:install @twilio-labs/plugin-serverless
 ```
-Then create your new project and install our lone requirement `got`, an HTTP client library to make HTTP requests in Node.js, by running:
-```bash
-twilio serverless:init twordle
-cd twordle
-npm install got
-```
+1. Clone the repo
+2. Run `npm install` in the `twordle` root directory
+3. Run `twilio serverless:deploy` in the `twordle` root directory
+
+Grab the link ending in `/game`.
 
 The meat of the code to play Twordle in `/functions/game.js`, but you also need the [private Asset](https://www.twilio.com/docs/labs/serverless-toolkit/general-usage#assets) in`Assets/words.txt`. 
 
-To open up our app to the web with a public-facing URL, go back to the `twordle` root directory and run `twilio serverless:deploy`. Grab the link ending in `/game`.
 
 In the [phone numbers section of your Twilio Console](https://www.twilio.com/console/phone-numbers/incoming), select a purchased Twilio phone number and scroll down to the <em>Messaging</em> section. Under <em>A MESSAGE COMES IN</em>, change <em>Webhook</em> to <em>Function</em> and then under <em>Service</em> select <em>Twordle</em>, for <em>Environment</em> select <em>dev-environment</em>, and then for <em>Function Path</em> select <em>/game</em>.
 
