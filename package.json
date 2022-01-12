@@ -10,6 +10,7 @@
   "dependencies": {
     "@twilio/runtime-handler": "1.2.1",
     "got": "^11.8.3",
+    "jfs": "^0.3.0",
     "twilio": "^3.56"
   },
   "devDependencies": {
