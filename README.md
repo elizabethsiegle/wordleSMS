@@ -29,3 +29,5 @@ The meat of the code to play Twordle in `/functions/game.js`, but you also need 
 In the [phone numbers section of your Twilio Console](https://www.twilio.com/console/phone-numbers/incoming), select a purchased Twilio phone number and scroll down to the <em>Messaging</em> section. Under <em>A MESSAGE COMES IN</em>, change <em>Webhook</em> to <em>Function</em> and then under <em>Service</em> select <em>Twordle</em>, for <em>Environment</em> select <em>dev-environment</em>, and then for <em>Function Path</em> select <em>/game</em>.
 
 Click the <strong>Save</strong> button below and tada🎉! You can now text your Twilio number a 5-letter word to get started playing tWordle!
+
+Loves-me-loves-me-not-tensorflow-python-sms
